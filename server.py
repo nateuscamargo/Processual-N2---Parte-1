@@ -1,3 +1,5 @@
+pip install flask
+
 from flask import Flask
 import time
 
@@ -11,3 +13,5 @@ def home():
 
 if __name__ == '__main__':
     app.run(port=5000)  # O servidor irá rodar na porta 5000
+
+python server.py
