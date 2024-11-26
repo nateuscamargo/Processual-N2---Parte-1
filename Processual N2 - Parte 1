@@ -1,0 +1,16 @@
+Durante o meu experimento usando uma forma de servidor local, usando o prompt de comando com o python, máquina usada, com o prompt de comando para instalar as requisições, por fim usando o vs code para colocar os códigos transformando em um servidor local.
+ 
+com isso fiz alguns testes para ver como funciona um ataque DDoS:
+
+Primeiro coloque 10 requisições: o servidor retornou.
+ 
+aumentou para 100 requisições: nem um erro ocorreu. 
+
+com 1000 requisições: ainda não deu problema, pois dependendo do servidor ele pode aguentar bastante. 
+
+agora 10000 requisições: com isso o servidor começou a não responder e dar alguns erros. 
+
+então fui mais avante com 100000 requisições: já com 100000 no início o servidor estava requisitando corretamente, mais depois de 5 segundos o servidor já começa a não responder de vez em quando, até que so fica dando falha, aparecendo a seguinte mensagem: 
+
+Falha na conexão: HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 
+0x000002626FF7EC50>: Failed to establish a new connection: [WinError 10048] Normalmente é permitida apenas uma utilização de cada endereço de soquete (protocolo/endereço de rede/porta)'))
